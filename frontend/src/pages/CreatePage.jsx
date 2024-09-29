@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useAddProductMutation } from '../services/Api';
+import { useAddProductMutation } from '../services/api';
 
 const CreatePage = () => {
 

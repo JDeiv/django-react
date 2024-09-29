@@ -1,0 +1,30 @@
+# docker-compose.yml
+
+services:
+  backend:
+    container_name: django_backend
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app
+      - backend_data:/app/db
+    environment:
+      - DEBUG=1  # Desactivar en producción
+
+
+  frontend:
+    container_name: vite_frontend
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "5173:5173"
+    depends_on:
+      - backend
+volumes:
+  backend_data:  
+
+

@@ -33,6 +33,7 @@ const API_URL = 'http://localhost:8000/api/v1/';
               method: 'POST',
               body: newProduct,
             }),
+            invalidatesTags: ['Product'],
           }), //query para agregar un producto
           updateProduct: builder.mutation({
             query: (updatedProduct) => ({

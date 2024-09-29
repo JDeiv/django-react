@@ -1,7 +1,7 @@
 import {useState} from 'react'
 import { useLocation } from 'react-router-dom';
 
-import { useUpdateProductMutation } from '../services/Api';
+import { useUpdateProductMutation } from '../services/api';
 
 
 
