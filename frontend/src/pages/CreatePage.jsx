@@ -26,7 +26,7 @@ const CreatePage = () => {
   return (
     <>
     <div>
-    <h1 className='font-bold text-center p-4 uppercase'>Crear nuevo Producto</h1>
+    <h1 className='font-bold text-center p-4 uppercase text-xl'>Crear nuevo Producto</h1>
     </div>
 
       <form onSubmit={onSave} className="w-full max-w-sm p-4 border-r border-l border-b shadow-2xl m-auto">

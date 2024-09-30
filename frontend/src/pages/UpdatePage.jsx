@@ -39,7 +39,7 @@ const UpdatePage = () => {
     <>
     <div><h1 className='uppercase text-center font-bold text-xl'>Actualizar Producto</h1></div>
     <div className='flex gap-2 items-center justify-center p-1 m-2  '><h2 className='text-gray-500 font-bold border-b shadow-lg p-2'>Nombre: {product.name} - ID: {product.id}</h2></div>
-    <form onSubmit={onSave} className="w-full max-w-sm m-auto">
+    <form onSubmit={onSave} className="w-full max-w-sm m-auto p-4 border-r border-l border-b shadow-2xl">
         <div className="md:flex md:items-center mb-6">
           <div className="md:w-1/3">
             <label className="block text-gray-500 font-semibold md:text-right mb-1 md:mb-0 pr-4" >
